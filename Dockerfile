@@ -26,7 +26,7 @@ COPY --from=build /src/package*.json ./
 
 RUN npm ci --omit=dev
 
-FROM node:18.12.1
+FROM node:18.12.1-alpine
 
 WORKDIR /app
 
